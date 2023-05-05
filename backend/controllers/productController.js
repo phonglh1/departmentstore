@@ -42,7 +42,7 @@ const getProducts = catchAsyncError(async (req, res, next) => {
 
     // return next(new ErrorHandler('My Error', 400))
 
-    const resPerpage = 8;
+    const resPerpage = 9;
     const productsCount = await Product.countDocuments();
 
     const apiFeatures = new APIFeatures(Product.find(), req.query)
